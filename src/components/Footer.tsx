@@ -4,12 +4,12 @@ import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
-    <footer className="bg-tour-darkPurple text-white py-16">
+    <footer className="bg-gradient-to-b from-slate-700 to-slate-900 text-white py-16">
       <div className="container mx-auto px-6">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div>
-            <h3 className="text-2xl font-bold mb-4 gradient-text">MoodJourney</h3>
-            <p className="text-gray-300 mb-4">
+            <h3 className="lg:text-4xl text-3xl font-bold mb-4 gradient-text">Touri</h3>
+            <p className="gradient-text mb-4">
               Personalized AI-powered travel recommendations based on your mood and budget.
             </p>
           </div>
@@ -42,8 +42,8 @@ const Footer = () => {
           </div>
         </div>
         
-        <div className="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
-          <p>&copy; {new Date().getFullYear()} MoodJourney. All rights reserved.</p>
+        <div className="border-t border-slate-700 mt-12 pt-8 text-center lg:text-base text-sm text-gray-400">
+          <p>&copy; {new Date().getFullYear()} Touri. All rights reserved.</p>
         </div>
       </div>
     </footer>

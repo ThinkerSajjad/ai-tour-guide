@@ -20,6 +20,8 @@ export default {
 		},
 		extend: {
 			colors: {
+				primaryStart: '#9b87f5',
+        primaryEnd: '#1EAEDB',
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',
 				ring: 'hsl(var(--ring))',

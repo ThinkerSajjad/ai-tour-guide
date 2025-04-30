@@ -8,7 +8,7 @@ const Header = () => {
     <header className="absolute top-0 left-0 right-0 z-10">
       <div className="container mx-auto px-6 py-4 flex items-center justify-between">
         <Link to="/" className="flex items-center">
-          <span className="text-2xl font-bold gradient-text">MoodJourney</span>
+          <span className="lg:text-4xl text-3xl font-bold gradient-text">Touri</span>
         </Link>
         <nav className="hidden md:flex items-center space-x-8">
           <Button variant="link" asChild>
@@ -28,7 +28,8 @@ const Header = () => {
           </Button>
         </nav>
         <div>
-          <Button variant="outline" className="border-white text-white hover:bg-white/10">
+          <Button size='sm' className="bg-gradient-to-r from-primaryStart to-primaryEnd hover:bg-transparent text-white py-1 px-4"
+          >
             Sign In
           </Button>
         </div>
