@@ -15,7 +15,7 @@ const Hero = () => {
           </h1>
           <p className="text-lg md:text-2xl mb-10 text-gray-200">
             Let our AI create a personalized travel experience based on your mood and budget.
-            Powered by Gemini 2.0 Flash.
+            Ask anything based on the generated tour plan.
           </p>
           <Button 
             asChild
