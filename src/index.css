@@ -103,3 +103,6 @@
 .gradient-text {
   @apply text-transparent bg-clip-text bg-gradient-to-r from-tour-purple to-tour-brightBlue;
 }
+.gradient {
+  @apply  from-tour-purple to-tour-brightBlue;
+}

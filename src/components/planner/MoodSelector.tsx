@@ -21,8 +21,8 @@ interface MoodSelectorProps {
 const MoodSelector: React.FC<MoodSelectorProps> = ({ selectedMood, onChange }) => {
   return (
     <div className="w-full max-w-3xl mx-auto animate-fade-in">
-      <h2 className="text-3xl font-bold mb-6 text-center">How are you feeling?</h2>
-      <p className="text-gray-600 mb-8 text-center">Select the mood that best describes what you're looking for in your journey.</p>
+      <h2 className="text-3xl font-bold mb-6 text-center bg-gradient-to-tr from-slate-50 to-slate-300 bg-clip-text text-transparent">How are you feeling?</h2>
+      <p className="text-slate-300 mb-8 text-center">Select the mood that best describes what you're looking for in your journey.</p>
       
       <RadioGroup
         value={selectedMood}
@@ -38,11 +38,11 @@ const MoodSelector: React.FC<MoodSelectorProps> = ({ selectedMood, onChange }) =
             />
             <Label
               htmlFor={mood.id}
-              className="flex flex-col items-center p-4 border-2 rounded-lg cursor-pointer peer-data-[state=checked]:border-tour-purple peer-data-[state=checked]:bg-tour-lightPurple/10 hover:bg-gray-50 transition-all"
+              className="flex flex-col items-center p-4 border-2 border-slate-500 rounded-lg cursor-pointer peer-data-[state=checked]:border-tour-purple peer-data-[state=checked]:bg-gradient-to-b hover:bg-gradient-to-b from-slate-700 to-slate-900 transition-all"
             >
               <span className="text-4xl mb-2">{mood.emoji}</span>
-              <span className="font-medium text-lg">{mood.name}</span>
-              <span className="text-gray-500 text-sm text-center">{mood.description}</span>
+              <span className="font-medium text-lg text-slate-200">{mood.name}</span>
+              <span className="text-slate-400 text-sm text-center">{mood.description}</span>
             </Label>
           </div>
         ))}

@@ -49,22 +49,22 @@ const Planner = () => {
   const progressPercentage = ((currentStep + 1) / steps.length) * 100;
 
   return (
-    <div className="min-h-screen bg-gray-50">
-      <header className="bg-white shadow-sm py-4">
-        <div className="container mx-auto px-6 flex justify-between items-center">
-          <Link to="/" className="text-2xl font-bold gradient-text">
-            MoodJourney
+    <div className="min-h-screen bg-gradient-to-bl from-slate-700 to-slate-900">
+      <header className="bg-gradient-to-b from-slate-700 to-slate-900 shadow-sm lg:py-4 py-3">
+        <div className="container mx-auto lg:px-6 px-4 flex justify-between items-center">
+          <Link to="/" className="lg:text-4xl text-3xl font-bold gradient-text">
+            Touri
           </Link>
-          <div className="text-sm text-gray-500">
+          <div className="text-sm text-slate-200">
             Step {currentStep + 1} of {steps.length}
           </div>
         </div>
-        <div className="container mx-auto px-6 mt-4">
-          <Progress value={progressPercentage} className="h-2 bg-gray-200" />
+        <div className="container mx-auto max-w-md px-6 mt-4">
+          <Progress value={progressPercentage} className="h-1 bg-slate-600" />
         </div>
       </header>
 
-      <main className="container mx-auto px-6 py-16">
+      <main className="container mx-auto lg:px-6 px-3 lg:py-16 py-8">
         <div className="step-transition">
           {currentStep === 0 && (
             <MoodSelector 
