@@ -6,7 +6,7 @@ const apiKey = import.meta.env.VITE_GEMINI_API_KEY as string;
 const genAI = new GoogleGenerativeAI(apiKey);
 
 // Gemini model configuration
-const modelName = "gemini-1.5-flash";
+const modelName = "gemini-2.5-flash";
 
 export interface TravelPreferences {
   mood: string;
